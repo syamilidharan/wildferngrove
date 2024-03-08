@@ -27,9 +27,10 @@
                                 </a>
                             </div>
                         </div>
+                        <div class="anchor"  id="anchor"></div>
                     </div>
                 </section>
-                <section class="secrvices-section" id="services">
+                <section class="secrvices-section">
                     <div class="service-outer">
                         <div class="container">
                             <div class="services-wrapper">
@@ -73,7 +74,7 @@
                 });
 
                 $('#down').on( "click", function(){
-                    $('html,body').animate({scrollTop: $("#services").offset().top},'slow');
+                    $('html,body').animate({scrollTop: $("#anchor").offset().top},1000);
                 });
 
             });           
