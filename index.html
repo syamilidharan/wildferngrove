@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1" id="wixDesktopViewport">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+        <title>Wildfern Grove | Wildfern Grove</title> 
+        <link href="assets/css/style.css" rel="stylesheet">
+        <script src="./assets/js/jquery-3.7.0.js"></script>
+
+    </head>
+
+    <body>
+        <div class="page-wrapper">
+            <main class="main-wrapper" id="main">
+                <section class="hero-section" id="top">
+                    <div class="container">
+                        <div class="hero-content-wrapper">
+                            <div class="hero-content">
+                                <h3 class="sub-head">WELCOME&nbsp; TO</h3>
+                                <h1 class="hero-head">Wildfern Grove</h1>
+                                <a id="down">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 200 200" fill="none">
+                                        <path d="M22.3134 71.9473L94.6504 138.599C95.3682 139.259 96.2124 139.767 97.132 140.091C98.0516 140.415 99.0274 140.549 100 140.485C100.973 140.55 101.949 140.416 102.869 140.091C103.788 139.767 104.632 139.26 105.349 138.599L177.687 71.9473C178.381 71.309 178.942 70.5402 179.338 69.6849C179.733 68.8295 179.957 67.9045 179.994 66.9628C180.032 66.021 179.884 65.0811 179.558 64.1967C179.232 63.3124 178.735 62.5011 178.094 61.8093C177.422 61.0799 176.605 60.498 175.695 60.1006C174.786 59.7031 173.804 59.4987 172.811 59.5003C171.068 59.5003 169.321 60.1293 167.939 61.4023L100 124.002L32.0614 61.4043C30.6597 60.1142 28.8036 59.4324 26.9 59.5085C24.9964 59.5846 23.2007 60.4124 21.9064 61.8103C21.2662 62.502 20.7688 63.3132 20.4427 64.1974C20.1166 65.0817 19.9682 66.0216 20.006 66.9633C20.0439 67.905 20.2671 68.83 20.6631 69.6852C21.059 70.5405 21.6199 71.3092 22.3134 71.9473Z" fill="white"/>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="secrvices-section" id="services">
+                    <div class="service-outer">
+                        <div class="container">
+                            <div class="services-wrapper">
+                                <div class="service-box">
+                                    <a href="https://www.instagram.com/wildfern_grove/" target=”_blank”>
+                                        <div class="service-images service1">
+                                            <h2>OUR YURTS</h2>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="service-box">
+                                    <a href="https://59306_1.holidayfuture.com/?fbclid=IwAR21L1tyJLSIKuM5effdViqf_dcgE6WPmeaYgs0skN3-VLyHMjYTAhl9K3Q" target=”_blank”>
+                                        <div class="service-images service2">
+                                            <h2>BOOK NOW</h2>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="service-box service3">
+                                    <a href="https://www.facebook.com/people/Wildfern-Grove/61555136205304/" target=”_blank”>
+                                        <div class="service-images">
+                                            <h2>CONTACT</h2>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </main>
+        </div>
+
+        
+        <script> 
+            $(document).ready(function() {
+
+                // Parallax Effect
+                $(window).scroll(function() {
+                    let offset = $(window).scrollTop();
+                    $("#main").css("background-position-y", offset * -0.2 + "px");
+                    // background will move slower than other elements on scroll.
+                });
+
+                $('#down').on( "click", function(){
+                    $('html,body').animate({scrollTop: $("#services").offset().top},'slow');
+                });
+
+            });           
+            
+            
+        </script>
+    </body>
+</html>
