@@ -1,1 +1,149 @@
-
+body{
+    margin:0;
+    padding: 0;
+    font-family: "sans-serif";
+}
+h1,h2,h3,h4,h5,h6{
+    margin: 0;
+    padding: 0;
+}
+@font-face {
+    font-family: "Avenir-LT-W01-85-Heavy";
+    src: url("../font/Avenir/Avenir-LT-W01-85-Heavy.woff") format('woff');
+}
+@font-face {
+    font-family: "Cinzel";
+    src: url("../font/Cinzel/Cinzel-Regular.woff") format('woff');
+}
+@font-face {
+    font-family: "wfont";
+    src: url("../font/wfont/file.woff2") format('woff');
+}
+  
+.main-wrapper{
+    background-image: linear-gradient( rgb(0 0 0 / 65%), rgb(0 0 0 / 65%)), url(../images/BgLeaf.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+}
+.container{
+     max-width: 1350px;
+     padding: 0 20px;
+     margin: 0 auto;
+}
+.hero-content-wrapper{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.hero-content{
+    padding: 80px 0px 110px;
+    text-align: center;    
+}
+.anchor{
+    padding: 50px;
+}
+.sub-head{
+    font-size: 20px;
+    letter-spacing: 0.2em;
+    color: #fff;
+    margin-bottom: 60px;
+    text-transform: uppercase;
+    font-family: "Avenir-LT-W01-85-Heavy", sans-serif;
+    font-weight: 500;
+}
+.hero-head{
+    font-size: 90px;
+    letter-spacing: 0em;
+    color: #fff;
+    margin-bottom: 100px;
+    text-transform: uppercase;
+    font-family: "wfont", sans-serif;
+    font-weight: normal;
+}
+.hero-content-wrapper a{
+    display: block;
+    height: 40px;
+    width: 40px;
+    margin:  0 auto;
+    border-radius: 50%;
+    overflow: hidden;
+    padding: 4px;
+    transition: all .2s ease;
+    cursor: pointer;    
+}
+.hero-content-wrapper a:hover{
+    background-color: rgba(232, 230, 230, 0.26);
+}
+.hero-content-wrapper a svg{
+    max-width: 100%;
+    margin: 0 auto;
+    transition: all .2s ease;
+}
+.hero-content-wrapper a:hover svg{
+    width: 23px;
+}
+.secrvices-section{
+    min-height: 100vh;
+}
+.service-outer{
+    background-color: rgba(89, 89, 89, 0.44);
+    padding: 50px 0;
+}
+.services-wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.service-box a{
+    text-decoration: none !important;
+}
+.service-images{
+    width: 360px;
+    height: 311px;
+    margin: 0 auto;
+    max-width: 100%;
+    border: 2px solid #fff;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.service1{
+    background-image: url(../images/autumn1_edited.jpg);
+}
+.service2{
+    background-image: url(../images/inside_edited.jpg);
+}
+.service3{
+    background-image: url(../images/sunset_edited.jpg);
+}
+.service-images h2{
+    font-size: 55px;
+    letter-spacing: 0em;
+    text-transform: uppercase;
+    color: #fff;
+    font-family: "Cinzel", sans-serif;
+    font-weight: normal;
+}
+@media only screen and (max-width: 1024px) {
+    .services-wrapper{
+        flex-direction: column;
+        row-gap: 40px;
+    }
+}
+@media only screen and (max-width: 768px) {
+    .hero-head{
+        font-size: 58px;
+    }
+    .service-images h2{
+        font-size: 40px;
+    }
+    .service-images {
+        width: 260px;
+        height: 230px
+    }
+}
